@@ -571,6 +571,7 @@ button {
     transition: all var(--transition-base);
     position: relative;
     overflow: hidden;
+    border-radius: var(--border-radius-xl);
 }
 
 .interest__card::before {
@@ -586,6 +587,7 @@ button {
        SOLUCIÓN: Falta la transición para la propiedad transform
        Agregar: transition: transform var(--transition-base);
        El pseudoelemento ::before necesita su propia transición para animar el scaleX */
+    transition: transform var(--transition-base);
 }
 
 .interest__card:hover {
